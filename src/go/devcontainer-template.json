@@ -1,0 +1,7 @@
+{
+  "id": "go",
+  "version": "1.0.0",
+  "name": "Go",
+  "description": "Go development environment with Claude Code, firewall, and Docker-in-Docker",
+  "documentationURL": "https://github.com/darthrevan030/devcontainers"
+}

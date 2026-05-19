@@ -1,0 +1,7 @@
+{
+  "id": "cpp",
+  "version": "1.0.0",
+  "name": "C/C++",
+  "description": "C/C++ environment with CMake, Claude Code, and firewall",
+  "documentationURL": "https://github.com/darthrevan030/devcontainers"
+}
