@@ -41,8 +41,7 @@
         "editor.inlayHints.enabled": "off",
         "editor.guides.indentation": false,
         "editor.guides.bracketPairs": false,
-        "javascript.updateImportsOnFileMove.enabled": "always",
-        "typescript.updateImportsOnFileMove.enabled": "always",
+        "js/ts.updateImportsOnFileMove.enabled": "always",
         "[javascript]": {
           "editor.tabSize": 2,
           "editor.defaultFormatter": "esbenp.prettier-vscode"
