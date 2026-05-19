@@ -1,21 +1,31 @@
 {
-	"name": "Python Dev",
+  "name": "Python",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
-        "vscode-icons-team.vscode-icons",
-        "streetsidesoftware.code-spell-checker"
+        "ms-python.isort",
+        "ms-python.debugpy",
+        "ms-toolsai.jupyter",
+        "usernamehw.errorlens",
+        "gruntfuggly.todo-tree",
+        "mhutchie.git-graph",
+        "streetsidesoftware.code-spell-checker",
+        "anthropic.claude-code",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+        "mtxr.sqltools-driver-sqlite",
+        "alexcvzz.vscode-sqlite"
       ],
       "settings": {
         "editor.fontSize": 16,
         "editor.formatOnSave": true,
         "editor.wordWrap": "off",
-        "editor.inlayHints.enabled": "off",
         "python.analysis.typeCheckingMode": "basic",
-        "python.terminal.useEnvFile": true
+        "python.terminal.useEnvFile": true,
+        "sqltools.useNodeRuntime": true
       }
     }
   },

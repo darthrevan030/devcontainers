@@ -1,14 +1,25 @@
 {
-  "name": "Node/TS Dev",
+  "name": "Node/TS",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
   "customizations": {
     "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "vscode-icons-team.vscode-icons",
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.npm-intellisense",
+        "chakrounanas.turbo-console-log",
+        "formulahendry.auto-close-tag",
+        "usernamehw.errorlens",
+        "gruntfuggly.todo-tree",
+        "mhutchie.git-graph",
+        "rangav.vscode-thunder-client",
         "streetsidesoftware.code-spell-checker",
-        "eamodio.gitlens"
+        "anthropic.claude-code",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+        "mtxr.sqltools-driver-sqlite",
+        "alexcvzz.vscode-sqlite"
       ],
       "settings": {
         "editor.fontSize": 16,
@@ -34,10 +45,11 @@
         "[typescriptreact]": {
           "editor.tabSize": 2,
           "editor.defaultFormatter": "esbenp.prettier-vscode"
-        }
+        },
+        "sqltools.useNodeRuntime": true
       }
     }
   },
-  "postCreateCommand": "npm install",
-  "forwardPorts": [3000, 5173, 8080]
+  "forwardPorts": [3000, 5173, 8080],
+  "postCreateCommand": "npm install"
 }
