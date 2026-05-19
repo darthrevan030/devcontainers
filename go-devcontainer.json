@@ -1,0 +1,27 @@
+{
+	"name": "Go Dev",
+  "image": "mcr.microsoft.com/devcontainers/go:1.23",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "vscode-icons-team.vscode-icons",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "editor.fontSize": 16,
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "off",
+        "editor.inlayHints.enabled": "off",
+        "editor.guides.indentation": false,
+        "editor.guides.bracketPairs": false,
+        "terminal.integrated.suggest.enabled": true,
+        "[go]": {
+          "editor.defaultFormatter": "golang.go",
+          "editor.tabSize": 4
+        }
+      }
+    }
+  },
+  "postCreateCommand": "go version"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Node/TS Dev",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "vscode-icons-team.vscode-icons",
+        "streetsidesoftware.code-spell-checker",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "editor.fontSize": 16,
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "off",
+        "editor.inlayHints.enabled": "off",
+        "editor.guides.indentation": false,
+        "editor.guides.bracketPairs": false,
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "[javascript]": {
+          "editor.tabSize": 2,
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascriptreact]": {
+          "editor.tabSize": 2,
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.tabSize": 2,
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+          "editor.tabSize": 2,
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  },
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000, 5173, 8080]
+}
