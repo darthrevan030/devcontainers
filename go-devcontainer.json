@@ -21,7 +21,7 @@
         "editor.inlayHints.enabled": "off",
         "editor.guides.indentation": false,
         "editor.guides.bracketPairs": false,
-        "sqltools.useNodeRuntime": true,
+        "sqltools.useNodeRuntime": false,
         "[go]": {
           "editor.defaultFormatter": "golang.go",
           "editor.tabSize": 4
