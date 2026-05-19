@@ -1,6 +1,19 @@
 {
   "name": "Node/TS",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:24.0",
+  "features": {
+    "ghcr.io/stu-bell/devcontainer-features/claude-code:0": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:3.0.0": {
+      "moby": false
+    },
+    "ghcr.io/w3cj/devcontainer-features/firewall:latest": {
+      "githubIps": true,
+      "claudeCode": true
+    }
+  },
+  "mounts": [
+    "source=${localEnv:USERPROFILE}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -50,6 +63,6 @@
       }
     }
   },
-  "forwardPorts": [3000, 5173, 8080],
-  "postCreateCommand": "npm install"
+  "forwardPorts": [3000, 5173, 8080, 5432],
+  "postCreateCommand": "[ -f package.json ] && npm install || true && sudo chown -R vscode:vscode ~/.claude && chmod 700 ~/.claude && chmod 600 ~/.claude/.credentials.json"
 }
