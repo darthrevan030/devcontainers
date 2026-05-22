@@ -1,6 +1,6 @@
 {
   "id": "python",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Python",
   "description": "Python 3.14 environment with Claude Code, firewall, and Docker-in-Docker",
   "documentationURL": "https://github.com/darthrevan030/devcontainers"

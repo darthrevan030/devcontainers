@@ -1,0 +1,7 @@
+{
+  "id": "universal",
+  "version": "1.0.0",
+  "name": "Universal",
+  "description": "Polyglot environment (Python, Node, Java, Go, C/C++, C#) with uv, firewall, and Docker-in-Docker",
+  "documentationURL": "https://github.com/darthrevan030/devcontainers/tree/main/src/universal"
+}

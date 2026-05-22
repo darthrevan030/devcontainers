@@ -1,9 +1,9 @@
 {
   "name": "Node/TS",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:24.0",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
   "features": {
     "ghcr.io/stu-bell/devcontainer-features/claude-code:0": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:3.0.0": {
+    "ghcr.io/devcontainers/features/docker-in-docker:3.0.1": {
       "moby": false
     },
     "ghcr.io/w3cj/devcontainer-features/firewall:latest": {
@@ -12,8 +12,10 @@
     }
   },
   "mounts": [
-    "source=${localEnv:USERPROFILE}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached"
+    "source=${localEnv:USERPROFILE}/.claude,target=/home/vscode/.claude,type=bind,consistency=cached",
+    "source=${localEnv:USERPROFILE}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
   ],
+  "remoteUser": "vscode",
   "customizations": {
     "vscode": {
       "extensions": [
