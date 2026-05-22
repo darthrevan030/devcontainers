@@ -5,9 +5,8 @@
     "ghcr.io/devcontainers/features/docker-in-docker:3.0.1": {
       "moby": false
     },
-    "ghcr.io/w3cj/devcontainer-features/firewall:latest": {
-      "githubIps": true,
-      "claudeCode": true
+    "ghcr.io/devcontainers/features/postgres:1.0.3": {
+      "version": "19"
     }
   },
   "mounts": [
@@ -20,7 +19,7 @@
     "5000": { "label": "Flask/Python",     "onAutoForward": "notify" },
     "5173": { "label": "Vite",             "onAutoForward": "notify" },
     "8080": { "label": "Java/Go",          "onAutoForward": "notify" },
-    "5432": { "label": "PostgreSQL",       "onAutoForward": "silent" }
+    "5432": { "label": "PostgreSQL",       "onAutoForward": "notify" }
   },
   "customizations": {
     "vscode": {
